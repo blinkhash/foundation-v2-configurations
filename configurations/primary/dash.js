@@ -64,6 +64,12 @@ recipient1.address = '[address]';
 recipient1.percentage = 0.05;
 config.primary.recipients.push(recipient1);
 
+// Blinkhash Donation Address
+const recipient2 = {};
+recipient2.address = 'Xenf25o7Dv7EMp9sPo4fU865Vvzr3DMPju';
+recipient2.percentage = 0.001;
+config.primary.recipients.push(recipient2);
+
 // Statistics Configuration
 config.primary.statistics = {};
 config.primary.statistics.enabled = true;
