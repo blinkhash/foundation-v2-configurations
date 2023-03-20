@@ -74,6 +74,12 @@ config.primary.recipients.push(recipient2);
 config.primary.statistics = {};
 config.primary.statistics.enabled = true;
 
+// ZMQ Configuration
+config.primary.zmq = {};
+config.primary.zmq.enabled = false;
+config.primary.zmq.host = '127.0.0.1';
+config.primary.zmq.port = 29000;
+
 // Auxiliary Configuration
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -117,6 +123,12 @@ config.auxiliary.payments.daemon.password = '[password]';
 config.auxiliary.statistics = {};
 config.auxiliary.statistics.enabled = true;
 
+// ZMQ Configuration
+config.auxiliary.zmq = {};
+config.auxiliary.zmq.enabled = false;
+config.auxiliary.zmq.host = '127.0.0.1';
+config.auxiliary.zmq.port = 29001;
+
 // Shared Configuration
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -147,6 +159,10 @@ config.settings.banning.checkThreshold = 500;
 config.settings.banning.invalidPercent = 50;
 config.settings.banning.purgeInterval = 300000; // ms
 
+// Batch Configuration
+config.settings.batch = {};
+config.settings.batch.limit = 200;
+
 // Timeout Configuration
 config.settings.timeout = {};
 config.settings.timeout.connection = 600000; // ms
@@ -158,6 +174,7 @@ config.settings.interval.blocks = 1000; // ms
 config.settings.interval.checks = 90000; // ms
 config.settings.interval.historical = 600000; // ms
 config.settings.interval.payments = 7200000; // ms
+config.settings.interval.recent = 600000; // ms
 config.settings.interval.rounds = 60000; // ms
 config.settings.interval.statistics = 90000; // ms
 
