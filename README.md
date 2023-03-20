@@ -27,6 +27,6 @@ Maintaining this project has always been driven out of nothing more than a desir
 
 ### License
 
-Released under the GNU General Public License v2. See http://www.gnu.org/licenses/gpl-2.0.html for more information
+Released under the GNU General Public License v3. See https://www.gnu.org/licenses/gpl-3.0 for more information
 
 ---
